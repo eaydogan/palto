@@ -16,11 +16,11 @@ to quickly check etc services.
 Palto requires [go](https://golang.org/) 1.9+ to run.
 
 ```sh
-go get github.com/eaydogan/palto
+git clone https://github.com/eaydogan/palto
 ```
 
 ```sh
-$ cd palto-master
+$ cd palto
 $ go build -o bin/palto
 $ ./bin/palto --ip 123.456.78.9
 ```
