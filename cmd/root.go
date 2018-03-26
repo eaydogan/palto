@@ -64,7 +64,7 @@ func init() {
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
 
-	rootCmd.PersistentFlags().StringVar(&opt.IP, "ip", "", "search ip adress.")
+	rootCmd.PersistentFlags().StringVar(&opt.IP, "ip", "", "search ip address.")
 	
 }
 
