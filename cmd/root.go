@@ -21,7 +21,7 @@ import (
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"palto/cli"
+	"github.com/eaydogan/palto/cli"
 )
 
 var cfgFile string
@@ -29,20 +29,16 @@ var opt cli.ScanOption
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "palto",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "Palto, is a Kubernetes public faces services security checker.",
+	Long: `Palto, search kubernetes known services ports and try to get
+information from that services. For example:
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+etcd is a distributed key-value store. Like mongoDB default installation is open public access.
+With Palto, you can search your etcd status. This application is a tool to generate the needed files (kubeconfig, token secret)
+to quickly check etc services.`,
 
-	// Uncomment the following line if your bare application
-	// has an action associated with it:
 		Run: func(cmd *cobra.Command, args []string) { 
-		
             cli.Scan(&opt)
-
 		},
 }
 
