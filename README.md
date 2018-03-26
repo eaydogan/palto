@@ -20,7 +20,8 @@ go get github.com/eaydogan/palto
 ```
 
 ```sh
-$ cd palto
+$ cd palto-master
+$ go build -o bin/palto
 $ ./bin/palto --ip 123.456.78.9
 ```
 
